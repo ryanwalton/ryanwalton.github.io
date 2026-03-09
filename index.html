@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ryan Walton — Computer Scientist</title>
+  <title>Ryan Walton — Software Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -11,16 +11,29 @@
 </head>
 <body>
 
+  <!-- NAV -->
+  <nav class="topnav">
+    <div class="topnav-inner">
+      <span class="nav-brand">RW</span>
+      <div class="nav-links">
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
   <!-- HEADER -->
   <header>
     <div class="header-inner">
-      <span class="eyebrow">Portfolio</span>
-      <h1>Ryan Walton<br><em>Computer Scientist</em></h1>
+      <span class="eyebrow">Software Engineer · 7 Years Experience</span>
+      <h1>Ryan Walton<br><em>Software Engineer</em></h1>
       <p class="bio">
-        Based in Orange County, California. B.S. in Computer Science from
-        Cal State Fullerton, May 2020. I build things end-to-end — from
-        compilers to trading platforms — and take pride in shipping work
-        that is both technically sound and genuinely useful.
+        Results-driven engineer specializing in data migration and management.
+        Proficient in Java, C++, and JavaScript with a proven track record of
+        delivering robust, scalable, high-performance products for clients
+        including the U.S. Navy and Northrop Grumman.
       </p>
       <div class="header-meta">
         <div class="meta-item">
@@ -28,140 +41,237 @@
           <span class="meta-value">Orange County, CA</span>
         </div>
         <div class="meta-item">
-          <span class="meta-label">Degree</span>
-          <span class="meta-value">B.S. Computer Science</span>
+          <span class="meta-label">Clearance</span>
+          <span class="meta-value">Secret (Active)</span>
         </div>
         <div class="meta-item">
-          <span class="meta-label">GitHub</span>
-          <span class="meta-value"><a href="https://github.com/ryanwalton" target="_blank" style="color:inherit;">github.com/ryanwalton</a></span>
+          <span class="meta-label">Certification</span>
+          <span class="meta-value">CompTIA Security+</span>
         </div>
+        <div class="meta-item">
+          <span class="meta-label">Degree</span>
+          <span class="meta-value">B.S. Computer Science, CSUF</span>
+        </div>
+      </div>
+      <div class="header-cta">
+        <a href="#contact" class="btn-primary">Get in Touch</a>
+        <a href="#projects" class="btn-ghost">View Projects</a>
       </div>
     </div>
   </header>
 
-  <!-- PROJECTS -->
   <main>
-    <div class="section-label">
-      <span>Selected Projects</span>
-    </div>
 
-    <div class="projects">
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="section-label"><span>Experience</span></div>
 
-      <!-- Blackjack AI -->
-      <article class="project-card">
-        <a href="https://github.com/ryanwalton/Blackjack_AI" target="_blank">
-          <div class="card-image">
-            <img src="Blackjack.png" alt="Blackjack AI Project" onerror="this.parentElement.innerHTML='<div class=card-image-placeholder>&#9824;</div>'">
-          </div>
-          <div class="card-body">
-            <div class="card-number">01 — AI / Algorithms</div>
-            <h2 class="card-title">Blackjack AI</h2>
-            <p class="card-desc">
-              An intelligent agent that plays Blackjack using professional-grade
-              strategies combined with card counting via probabilistic inference —
-              modeling the theoretical "optimal" player.
-            </p>
-            <span class="card-arrow">
-              View on GitHub
-              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-            </span>
-          </div>
-        </a>
-      </article>
+      <div class="timeline">
 
-      <!-- Stock Trader -->
-      <article class="project-card">
-        <a href="https://github.com/ryanwalton/Stock_Trader" target="_blank">
-          <div class="card-image">
-            <img src="stock_trader_website.png" alt="Stock Trader Project" onerror="this.parentElement.innerHTML='<div class=card-image-placeholder>$</div>'">
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-date">Jan 2022 — Present</span>
+            <span class="timeline-loc">Costa Mesa, CA</span>
           </div>
-          <div class="card-body">
-            <div class="card-number">02 — Web App / Finance</div>
-            <h2 class="card-title">Stock Trader</h2>
-            <p class="card-desc">
-              A zero-commission simulated trading platform. Users can buy, sell,
-              and manage a portfolio risk-free — ideal for learning the market
-              without real financial consequences.
-            </p>
-            <span class="card-arrow">
-              View on GitHub
-              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-            </span>
-          </div>
-        </a>
-      </article>
+          <div class="timeline-body">
+            <div class="timeline-header">
+              <h3>Software Engineer II</h3>
+              <span class="timeline-company">eQ Technologic Inc.</span>
+            </div>
 
-      <!-- Compiler -->
-      <article class="project-card">
-        <a href="https://github.com/ryanwalton/Compiler-Project" target="_blank">
-          <div class="card-image">
-            <img src="compiler.png" alt="Compiler Project" onerror="this.parentElement.innerHTML='<div class=card-image-placeholder>{ }</div>'">
-          </div>
-          <div class="card-body">
-            <div class="card-number">03 — Systems / Languages</div>
-            <h2 class="card-title">Compiler Project</h2>
-            <p class="card-desc">
-              A full compilation pipeline that ingests a custom language from a
-              text file, parses and translates it into valid C++ source code,
-              and produces a runnable executable with expected output.
-            </p>
-            <span class="card-arrow">
-              View on GitHub
-              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-            </span>
-          </div>
-        </a>
-      </article>
+            <div class="timeline-role">
+              <div class="role-tag">U.S. Navy — MBPS</div>
+              <ul class="role-bullets">
+                <li>Created the deployment pipeline to package and ship products across environments, establishing organization-wide uniformity.</li>
+                <li>Served as Artifact Deployment Manager and Interface Lead for MFOM/SDIF Outbound and SHIPS3M.</li>
+                <li>Maintained customer satisfaction through daily client communication and weekly progress reviews.</li>
+              </ul>
+            </div>
 
-      <!-- Battleship -->
-      <article class="project-card">
-        <a href="https://github.com/ryanwalton/Battleship" target="_blank">
-          <div class="card-image">
-            <img src="battleship.png" alt="Battleship GUI" onerror="this.parentElement.innerHTML='<div class=card-image-placeholder>+</div>'">
+            <div class="timeline-role">
+              <div class="role-tag">Northrop Grumman — GBSD Sentinel Program</div>
+              <ul class="role-bullets">
+                <li>Led Data Movers development — fetching from source environments, writing to file directories, zipping, transferring via Fences Buckets, and importing to destination environments.</li>
+                <li>Built multi-application support across DOORS, JIRA, SharePoint, Teamwork Cloud (Cameo), and Teamcenter.</li>
+                <li>Delivered NG-approved Requirement, Design, Technical, and User documentation.</li>
+                <li>Engineered intelligent data sorting logic handling new, existing, updated, and deleted records via database writes.</li>
+              </ul>
+            </div>
           </div>
-          <div class="card-body">
-            <div class="card-number">04 — Java / GUI</div>
-            <h2 class="card-title">Battleship GUI</h2>
-            <p class="card-desc">
-              A single-player implementation of Battleship built in Java using
-              Swing. Features a full graphical interface with keyboard-driven
-              navigation between game screens via KeyListener.
-            </p>
-            <span class="card-arrow">
-              View on GitHub
-              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-            </span>
-          </div>
-        </a>
-      </article>
+        </div>
 
-      <!-- Web Server -->
-      <article class="project-card">
-        <a href="https://github.com/ryanwalton/WebServer" target="_blank">
-          <div class="card-image">
-            <img src="webserver.png" alt="Web Server Project" onerror="this.parentElement.innerHTML='<div class=card-image-placeholder>~</div>'">
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-date">Nov 2018 — Nov 2021</span>
+            <span class="timeline-loc">Upland, CA</span>
           </div>
-          <div class="card-body">
-            <div class="card-number">05 — Networking / Systems</div>
-            <h2 class="card-title">Web Server</h2>
-            <p class="card-desc">
-              A lightweight HTTP server built from scratch. Serves static HTML
-              files and demonstrates core networking concepts — socket handling,
-              request parsing, and response formatting.
-            </p>
-            <span class="card-arrow">
-              View on GitHub
-              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-            </span>
+          <div class="timeline-body">
+            <div class="timeline-header">
+              <h3>IT / Computer Technician</h3>
+              <span class="timeline-company">A&S Partners</span>
+            </div>
+            <ul class="role-bullets">
+              <li>Supervised and tested daily performance across all computer systems.</li>
+              <li>Performed hardware repairs including hard drive transfers, part replacements, and OS troubleshooting.</li>
+              <li>Installed and configured software and functions according to client specifications.</li>
+            </ul>
           </div>
-        </a>
-      </article>
+        </div>
 
-    </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="section-label"><span>Skills &amp; Certifications</span></div>
+
+      <div class="skills-grid">
+
+        <div class="skill-block">
+          <div class="skill-block-label">Languages</div>
+          <div class="skill-tags">
+            <span class="tag tag-primary">Java</span>
+            <span class="tag tag-primary">JavaScript</span>
+            <span class="tag tag-primary">C++</span>
+            <span class="tag tag-primary">SQL</span>
+            <span class="tag">Python</span>
+            <span class="tag">HTML</span>
+            <span class="tag">Assembly</span>
+            <span class="tag">PowerShell</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <div class="skill-block-label">Platforms &amp; Tools</div>
+          <div class="skill-tags">
+            <span class="tag tag-primary">IBM DOORS</span>
+            <span class="tag tag-primary">JIRA</span>
+            <span class="tag tag-primary">SharePoint</span>
+            <span class="tag tag-primary">OrientDB</span>
+            <span class="tag">Teamwork Cloud</span>
+            <span class="tag">Windchill</span>
+            <span class="tag">Teamcenter</span>
+            <span class="tag">Linux</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <div class="skill-block-label">IDEs &amp; Environments</div>
+          <div class="skill-tags">
+            <span class="tag">Visual Studio</span>
+            <span class="tag">NetBeans</span>
+            <span class="tag">PyCharm</span>
+            <span class="tag">R / R Studio</span>
+            <span class="tag">Excel</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <div class="skill-block-label">Certifications &amp; Clearance</div>
+          <div class="cert-list">
+            <div class="cert-item">
+              <div class="cert-icon">✦</div>
+              <div>
+                <div class="cert-name">CompTIA Security+</div>
+                <div class="cert-sub">License #cec92bfef0fc49cca20b5483a9771cdb</div>
+              </div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-icon">✦</div>
+              <div>
+                <div class="cert-name">U.S. Government Security Clearance</div>
+                <div class="cert-sub">Secret · Active</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="section-label"><span>Selected Projects</span></div>
+
+      <div class="projects">
+
+        <article class="project-card">
+          <a href="https://github.com/ryanwalton/Blackjack_AI" target="_blank">
+            <div class="card-image">
+              <img src="Blackjack.png" alt="Blackjack AI Project" onerror="this.parentElement.innerHTML='<div class=card-image-placeholder>&#9824;</div>'">
+            </div>
+            <div class="card-body">
+              <div class="card-number">01 — AI / Algorithms</div>
+              <h2 class="card-title">Blackjack AI</h2>
+              <p class="card-desc">An intelligent agent that plays Blackjack using professional-grade strategies combined with card counting via probabilistic inference — modeling the theoretical "optimal" player.</p>
+              <span class="card-arrow">View on GitHub <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
+            </div>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <a href="https://github.com/ryanwalton/Stock_Trader" target="_blank">
+            <div class="card-image">
+              <img src="stock_trader_website.png" alt="Stock Trader Project" onerror="this.parentElement.innerHTML='<div class=card-image-placeholder>$</div>'">
+            </div>
+            <div class="card-body">
+              <div class="card-number">02 — Web App / Finance</div>
+              <h2 class="card-title">Stock Trader</h2>
+              <p class="card-desc">A zero-commission simulated trading platform. Users can buy, sell, and manage a portfolio risk-free — ideal for learning the market without real financial consequences.</p>
+              <span class="card-arrow">View on GitHub <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
+            </div>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <a href="https://github.com/ryanwalton/Compiler-Project" target="_blank">
+            <div class="card-image">
+              <img src="compiler.png" alt="Compiler Project" onerror="this.parentElement.innerHTML='<div class=card-image-placeholder>{ }</div>'">
+            </div>
+            <div class="card-body">
+              <div class="card-number">03 — Systems / Languages</div>
+              <h2 class="card-title">Compiler Project</h2>
+              <p class="card-desc">A full compilation pipeline that ingests a custom language from a text file, parses and translates it into valid C++ source code, and produces a runnable executable.</p>
+              <span class="card-arrow">View on GitHub <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
+            </div>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <a href="https://github.com/ryanwalton/Battleship" target="_blank">
+            <div class="card-image">
+              <img src="battleship.png" alt="Battleship GUI" onerror="this.parentElement.innerHTML='<div class=card-image-placeholder>+</div>'">
+            </div>
+            <div class="card-body">
+              <div class="card-number">04 — Java / GUI</div>
+              <h2 class="card-title">Battleship GUI</h2>
+              <p class="card-desc">A single-player Battleship built in Java using Swing. Features a full graphical interface with keyboard-driven navigation between game screens via KeyListener.</p>
+              <span class="card-arrow">View on GitHub <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
+            </div>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <a href="https://github.com/ryanwalton/WebServer" target="_blank">
+            <div class="card-image">
+              <img src="webserver.png" alt="Web Server Project" onerror="this.parentElement.innerHTML='<div class=card-image-placeholder>~</div>'">
+            </div>
+            <div class="card-body">
+              <div class="card-number">05 — Networking / Systems</div>
+              <h2 class="card-title">Web Server</h2>
+              <p class="card-desc">A lightweight HTTP server built from scratch. Serves static HTML files and demonstrates core networking concepts — socket handling, request parsing, and response formatting.</p>
+              <span class="card-arrow">View on GitHub <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
+            </div>
+          </a>
+        </article>
+
+      </div>
+    </section>
+
   </main>
 
-  <!-- FOOTER -->
-  <footer>
+  <!-- FOOTER / CONTACT -->
+  <footer id="contact">
     <div class="footer-inner">
       <div class="footer-left">
         <h3>Let's connect.</h3>
@@ -176,13 +286,17 @@
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           ryan.walton1027@gmail.com
         </a>
+        <a href="tel:7142734862">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.07 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/></svg>
+          (714) 273-4862
+        </a>
         <a href="https://github.com/ryanwalton" target="_blank">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.66-.22.66-.48v-1.69c-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85 0 1.71.11 2.51.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.16.58.67.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
           GitHub
         </a>
       </div>
     </div>
-    <p class="copyright">© 2020 Ryan Walton — Computer Scientist</p>
+    <p class="copyright">© 2026 Ryan Walton — Software Engineer</p>
   </footer>
 
 </body>
